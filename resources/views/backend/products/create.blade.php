@@ -24,7 +24,8 @@
 
                  <x-backend.alertmessage.alertmessage type="success"/> 
                 
-                <select name="category" id="">
+                <select name="category" id="" class="form-select" aria-label="Default select example">
+                    <option value="">Select Chategory</option>
                     @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->title }}</option>
                     @endforeach

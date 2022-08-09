@@ -10,7 +10,11 @@
        {{-- <a href="{{ route('products.trash') }}"> <button class="btn btn-outline-info btn-sm text-black">Trash</button></a> --}}
 
     </div>
-   <x-backend.alertmessage.alertmessage type="success"/>
+  
+    
+    <x-backend.alertmessage.alertmessage type="success"/>
+    
+    
     <div class="card-body">
         <table id="datatablesSimple">
             <thead>

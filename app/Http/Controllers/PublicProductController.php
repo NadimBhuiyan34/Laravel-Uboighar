@@ -79,7 +79,7 @@ class PublicProductController extends Controller
               );
               return redirect()->route('earnpoint')->withMessage('Order Confirm Successfully');
          }
-         return redirect()->back()->withMessage('Order Id is wrong,Enter valid order id');
+         return redirect()->back()->withMessage('Order Id is wrong,Enter valid order id')->withType('danger');
          
    
    }

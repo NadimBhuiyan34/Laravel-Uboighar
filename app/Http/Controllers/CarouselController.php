@@ -25,7 +25,7 @@ class CarouselController extends Controller
         
        ]
        );
-       return redirect()->route('carousels.index')->withMessage('Successfully Inserted');
+       return redirect()->route('carousels.index')->withMessage('New carousel successfully added');
     }
     
     
@@ -58,7 +58,7 @@ class CarouselController extends Controller
           return view('backend.carousel.edit',compact('carousels'));  
     }
      
-        public function update(CarouselRequest $request,$carousel)
+        public function update(Request $request,$carousel)
     {
         if($file=$request->file('carouselimage')){
             $filename=date('dmY').time().'.'.$file->getClientOriginalExtension();
@@ -66,9 +66,9 @@ class CarouselController extends Controller
         }
           $carouselupdate=carousel::findOrFail($carousel);
           $carouselupdate->update([
-            'carouseltitle'=>$request->booktitle,
-            'carouselcaption'=>$request->bookauthor,
-            'carouselimage'=>$filename,
+            'carouseltitle'=>$request->carouseltitle,
+            'carouselcaption'=>$request->carouselcaption,
+            'carouselimage'=>$filename??$carouselupdate->carouselimage,
            ]
            );
            return redirect()->route('carousels.index')->withMessage('Successfully updated');

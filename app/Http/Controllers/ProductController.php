@@ -55,7 +55,7 @@ class ProductController extends Controller
         'category_id'=>$request->category,
     ]
    );
-   return redirect()->route('products.index')->withMessage('Successfully submitted');
+   return redirect()->route('products.index')->withMessage('New product successfully added')->withType('success');
     }
 
     /**
@@ -122,6 +122,6 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product=Product::findOrFail($id)->delete();
-      return redirect()->route('products.index')->withMessage('Successfully Data Deleted');
+      return redirect()->route('products.index')->withMessage('Successfully Data Deleted')->withType('delete');
     }
 }
