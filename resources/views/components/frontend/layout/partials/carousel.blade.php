@@ -1,7 +1,7 @@
 
 @props(['carousels'])
 <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel slide shadow " data-bs-ride="carousel" >
 
   <!-- Indicators/dots -->
  
@@ -21,13 +21,13 @@
   
   <!-- The slideshow/carousel -->
   
-  <div class="carousel-inner">
+  <div class="carousel-inner rounded">
     @php
     $active="active";
     @endphp
     @foreach ($carousels as $carousel)
     <div class="carousel-item {{ $active }}">
-      <img src="{{ asset('storage/carousel/'.$carousel->carouselimage) }}" alt="Los Angeles" class="d-block" style="width:100%;height:400px">
+      <img src="{{ asset('storage/carousel/'.$carousel->carouselimage) }}" alt="Los Angeles" class="d-block" style="width:100%;height:400px"style="">
     </div>
     @php
     $active="";
@@ -44,4 +44,4 @@
   </button>
  
 </div>
-
+</div>

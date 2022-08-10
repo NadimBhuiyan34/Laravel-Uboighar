@@ -12,7 +12,6 @@
 <!-- Main Stylesheet -->
 <link rel="stylesheet" href="{{ asset('ui/frontend/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('ui/frontend/css/footer.css') }}">
- 
  <!-- bootstrap.min css -->
 <link rel="stylesheet" href="{{ asset('ui/frontend/plugins/bootstrap5/css/bootstrap.min.css') }}">
  
@@ -32,10 +31,12 @@
 @stack('nadim')
 @stack('profile')
 @stack('popover')
+@stack('watch')
+@stack('calender')
 
  {{-- Java script --}}
 <script src="https://kit.fontawesome.com/496c26838e.js" crossorigin="anonymous"></script>
-<script src="{{ asset('ui/frontend/plugins/bootstrap5/css/bootstrap.min.js') }}"></script>
+<script src="{{ asset('ui/frontend/plugins/bootstrap5/js/bootstrap.min.js') }}"></script>
  
 </body>
 </html>

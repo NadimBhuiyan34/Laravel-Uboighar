@@ -1,17 +1,29 @@
  
  <x-frontend.layout.master>
 	<x-slot name="title">HomePage</x-slot>
+	<section class=" gray-bg ">
 <marquee behavior="" direction="" style="background-color: yellow; width:100%;color: black;"> Welcome to our University Boighar</marquee>
-<x-frontend.layout.partials.carousel :carousels="$carousels"/> 
  
-<div class="mx-auto mt-2" style="width:300px">
+ <div class="mx-3 row">
+ 
+  <div class="col-9">
+	<x-frontend.layout.partials.carousel :carousels="$carousels"/> 
+  </div>
+  <div class="col-3 mx-auto " style="width:300px">
 	<x-frontend.watch.watch/>
-</div>
+	{{-- <x-frontend.watch.calender/> --}}
+	 
+  </div>
+  
  
 
+</div>
  
-<section class="gray-bg ">
-	<section class="section service gray-bg ">
+ 
+ 
+ 
+ 
+	<section class=" service gray-bg ">
 		<h1 class="text-center" style="margin-bottom: 100px;">Best Sell Book</h1>
    
 		   <div class="row">
@@ -109,5 +121,5 @@
 	   </div>
    </section>
 	 
-</section>
+ 
 </x-frontend.layout.master>

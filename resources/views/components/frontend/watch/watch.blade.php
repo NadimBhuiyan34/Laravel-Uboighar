@@ -1,37 +1,26 @@
  <!--digital Clock start-->
- <div class="col-md-12 mb-5" id="digital-clock-body">
-    <div class="" id="clock">
-      {{-- <a class="navbar-brand mx-auto" href="{{ route('homepage') }}">
-        <img src="{{ asset('ui/frontend/images/logo/uboighar.png') }}" alt="" class="img-fluid">
-      </a> --}}
-      <h2>THE TIME IS NOW</h2>
-      <div class="" id="time">
-        <div><span id="hour">00</span><span>Hours</span></div>
-        <div><span id="minutes">00</span><span>Minutes</span></div>
-        <div><span id="seconds">00</span><span>Seconds</span></div>
-      </div>
+ <body onload="initClock()">
+  <!--digital clock start-->
+  <div class="datetime">
+    <div class="date">
+      <span id="dayname">Day</span>,
+      <span id="month">Month</span>
+      <span id="daynum">00</span>,
+      <span id="year">Year</span>
     </div>
-    <script type="text/javascript">
-      function clock(){
+    <div class="time">
+      <span id="hour">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+      <span id="period">AM</span>
+      
+    </div>
+  </div>
+  <!--digital clock end-->
 
-        var hours = document.getElementById('hour');
-        var minutes = document.getElementById('minutes');
-        var seconds = document.getElementById('seconds');
+  @push('watch')
+  <script src="{{ asset('ui/frontend/js/watch.js') }}"></script>
+  <link rel="stylesheet" href="{{ asset('ui/frontend/css/watch.css') }}">
+  @endpush
 
-        var h = new Date().getHours();
-        var m = new Date().getMinutes();
-        var s = new Date().getSeconds();
-        if (h > 12) {
-          hours.innerHTML = (h-12);
-          minutes.innerHTML = m;
-          seconds.innerHTML = s;
-        }else {
-          hours.innerHTML = h;
-          minutes.innerHTML = m;
-          seconds.innerHTML = s;
-        }
-
-      }
-      var interval = setInterval(clock, 1000);
-    </script>
-   </div>
+</body>

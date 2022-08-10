@@ -6,15 +6,15 @@
 <!-- Slider Start -->
 <div class="container d-flex justify-content-center">
     @if(isset($banner->image))
-    <div class="card ">
-        <img src="{{ asset('/storage/banner/' . $banner->image) }}" alt="Banner"style="width:100%">
+    <div class="card shadow">
+        <img src="{{ asset('/storage/banner/' . $banner->image) }}" alt="Banner" class="w-100 rounded">
     </div>
     @endif
 </div>
 <section class=""  >
 <!-- /Slider end -->
 
-  <div class="container ">
+  <div class="container mt-3 mb-3">
       
     
    <x-frontend.form.card_header text="Contact Us" class="text-white rounded"/>

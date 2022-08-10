@@ -9,8 +9,8 @@
 
         <div class="container d-flex justify-content-center">
             @if(isset($banner->image))
-            <div class="card ">
-                <img src="{{ asset('/storage/banner/' . $banner->image) }}" alt="Banner"style="width:100%">
+            <div class="card shadow">
+                <img src="{{ asset('/storage/banner/' . $banner->image) }}" alt="Banner" class="w-100 rounded">
             </div>
             @endif
         </div>
@@ -28,11 +28,8 @@
                      <p>Sell needs to fill up some requirements as like:</p>
                      <p>1. Fill the below form with valid data</p>
                      <p>2. Give Clear Information</p>
-
-
   
-                     
-                     <x-frontend.modal.modal id="donatebook" name="See Vedio" title="Donate Book Vedio" url="https://www.youtube.com/embed/tgbNymZ7vqY"/>
+                     <x-frontend.modal.modal id="donatebook" name="See Donate Video" title="Donate Book Video" url="https://www.youtube.com/embed/tgbNymZ7vqY"/>
                         
                        
             </div>
