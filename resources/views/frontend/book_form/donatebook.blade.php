@@ -1,7 +1,6 @@
 
 
  <x-frontend.layout.master>
-    {{-- <x-slot :title>DonateBook_From</x-slot> --}}
     @slot('title')
     DonateBook_Form
     @endslot
@@ -84,8 +83,5 @@
  </div>
 </div>
  
-  <script>
-    mask("input");
-  </script>
 </x-frontend.layout.master>
 </section>

@@ -1,7 +1,4 @@
 <x-frontend.layout.master>
-
- 
- 
     <x-slot name="title">SellBook_Form</x-slot>
     <div class="container d-flex justify-content-center">
         @if(isset($banner->image))
@@ -77,13 +74,5 @@
    </div>
     
 </div>
-
- 
-  <script>
-    mask("input");
-  </script>
- 
- 
-  
 </x-frontend.layout.master>
 </section>

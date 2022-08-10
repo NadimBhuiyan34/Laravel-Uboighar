@@ -30,45 +30,6 @@
                    </form>
                     
                 </div>
-                {{-- <div class="row">
- 
-                <div class="col-md-6">
-                    <div class="row">
-                        <h5><b>Book Title: </b>{{ $bookdetail->booktitle }}</h5>
-                    </div>
-
-                    <div class="row">
-                        <h5> <b>Price: </b>{{ $bookdetail->price }}&#2547;</h5>
-                        <h5> <b>Book Author: </b>{{ $bookdetail->bookauthor }}</h5>
-                        <h5><b>Book Edition: </b>{{ $bookdetail->bookedition }}</h5>
-                        <h5><label for="number"><b>Quantity: </b> {{ $bookdetail->bookquantity }}</label></h5>
-                        <h3><b>Mobile Number: </b>{{ $bookdetail->mobile }}</h3>
-                    </div>
-                    {{-- <div class="row">
- 
-                    <h3 class="text-warning"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                            aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <i
-                            class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o"
-                            aria-hidden="true"></i></h3>
-                    &nbsp; &nbsp;
-                    <h5>1200 star rating and 250 reviews</h5>
-                </div> --}}
-                    {{-- <div class="row">
-                    <p><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong>
-                        20% Instant Discount on SBI Credit Cards</p>
-                    <p><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong>
-                        5% Unlimited Cashback on Flipkart Axis Bank Credit Card </p>
-                    <p><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong>
-                        Extra 5% off* with Axis Bank Buzz Credit Card</p>
-                    <p><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank
-                            Offer</strong>20% Instant Discount on pay with <i class="fa fa-google-wallet"
-                            aria-hidden="true"></i> google wallet </p>
-                </div> --}}
-
-                    {{-- <p style="font-size: 20px"> &nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i> Delivery by23
-                    Jul, Tuesday | &nbsp; <span class="text-success">FREE</span> </p> --}}
- 
-                {{-- <a class="btn btn-danger text-light" href="{{ route('carts',['cart',$bookdetail->id]) }}"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> --}}
                 
             </div>
         </div>

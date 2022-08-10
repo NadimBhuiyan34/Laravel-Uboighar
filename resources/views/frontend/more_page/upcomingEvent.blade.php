@@ -43,8 +43,7 @@
 
             </p>
 
-                <!--<p>$event->details</p>
-                <a class="butn small margin-10px-top md-no-margin-top" href="event-details.html">Read More <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>-->
+              
             </div>
         </div>
     </div>

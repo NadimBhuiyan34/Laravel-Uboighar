@@ -1,6 +1,4 @@
 <x-frontend.layout.master>
-
-    {{-- <x-slot :title>DonateBook_From</x-slot> --}}
     @slot('title')
         DonateBook_Request_Form
     @endslot
@@ -26,14 +24,7 @@
           <div class="form-group" style="padding-left: 20px; color: gray;">
               <button type="submit" class="btn btn-primary" name="submit">Submit</button>
           </div>
-
- 
- 
-    <!-- Slider Start -->
  
     </div>
-    <script>
-        mask("input");
-      </script>
 </x-frontend.layout.master>
 </section>
