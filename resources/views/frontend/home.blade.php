@@ -1,18 +1,35 @@
  
  <x-frontend.layout.master>
 	<x-slot name="title">HomePage</x-slot>
+	<marquee behavior="" direction="right" style=" background-color:#fcfefc;width:100%;color: black;">
+		<div class="d-inline-block">
+			<div class="d-inline-block">
+				<img src="{{ asset('ui/frontend/images/book/welcome.gif') }}" alt="" style="width:100px;height:60px">
+			</div>
+			<div class="d-inline-block">
+				<p><b>University Boighar</b></p>
+			</div>
+			<div class="d-inline-block">
+				<img src="{{ asset('ui/frontend/images/book/walking-reading.gif') }}" alt="" style="width:100px;height:60px">
+			</div>
+		
+		</div>
+		
+		 
+		
+	</marquee>
 	<section class=" gray-bg ">
-<marquee behavior="" direction="" style="background-color: yellow; width:100%;color: black;"> Welcome to our University Boighar</marquee>
  
- <div class="mx-3 row">
+		 
+ <div class="mx-3 row ">
  
-  <div class="col-9">
+  <div class="col-md-9 ">
 	<x-frontend.layout.partials.carousel :carousels="$carousels"/> 
   </div>
-  <div class="col-3 mx-auto " style="width:300px">
+  <div class="col-md-3 mx-auto " style="width:300px">
 	<x-frontend.watch.watch/>
 	{{-- <x-frontend.watch.calender/> --}}
-	 
+	 <img src="{{ asset('ui/frontend/images/book/book2.png') }}" alt="" style="width:300px;height:240px"  class="rounded ">
   </div>
   
  

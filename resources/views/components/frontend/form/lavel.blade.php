@@ -1,4 +1,4 @@
 @props(['name','text'])
 
 
-<label for="{{ $name }}Input">{{ $text }}</label>
+<label for="{{ $name }}Input" class="p-2">{{ $text }}</label>

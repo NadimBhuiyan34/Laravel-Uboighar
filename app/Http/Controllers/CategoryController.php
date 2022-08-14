@@ -85,7 +85,7 @@ public function destroy(Category $category)
 {
       
       $category->delete();
-      return redirect()->route('categories.index')->withMessage('Successfully Deleted');
+      return redirect()->route('categories.index')->withMessage('Successfully Deleted')->withType('delete');
 
 
 }

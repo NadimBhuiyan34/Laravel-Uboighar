@@ -23,10 +23,10 @@
 
                  <x-backend.alertmessage.alertmessage type="success"/> 
                 <div class="col-md-12">
-                <x-frontend.form.input name="title" text=" Title" type="text" :value="old('title')"/>
+                <x-frontend.form.input name="title" text="Name" type="text" :value="old('title')"/>
                </div>
                <div class="col-md-12">
-                <x-frontend.form.input name="description" text="Details" type="textarea" :value="old('description')"/>
+                <x-frontend.form.input name="description" text="Title" type="textarea" :value="old('description')"/>
                </div>
                <div class="col-md-12">
                 <x-frontend.form.input name="image" text="Image" type="file" />

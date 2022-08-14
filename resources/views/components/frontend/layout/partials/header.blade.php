@@ -24,7 +24,7 @@
            </div>
        </div>
    </div>
-   <nav class="navbar navbar-expand-lg navigation" id="navbar">
+   <nav class="navbar navbar-expand-sm navigation" id="navbar">
        <div class="container">
              <a class="navbar-brand" href="{{ route('homepage') }}">
                  <img src="{{ asset('ui/frontend/images/logo/uboighar.png') }}" alt="" class="img-fluid">
