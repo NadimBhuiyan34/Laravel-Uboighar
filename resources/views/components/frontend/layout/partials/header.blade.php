@@ -96,7 +96,7 @@
                   @auth
                  <li><form method="POST" action="{{ route('logout') }}">
                   @csrf
-                  <a class="dropdown-item" href="route('logout')"
+                  <a class="dropdown-item"
                           onclick="event.preventDefault();
                                       this.closest('form').submit();">
                        {{ __('Log Out') }}

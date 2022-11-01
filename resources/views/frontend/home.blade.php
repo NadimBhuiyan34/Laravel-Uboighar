@@ -1,7 +1,7 @@
  
  <x-frontend.layout.master>
 	<x-slot name="title">HomePage</x-slot>
-	<marquee behavior="" direction="right" style=" background-color:#fcfefc;width:100%;color: black;">
+	{{-- <marquee behavior="" direction="right" style=" background-color:#fcfefc;width:100%;color: black;">
 		<div class="d-inline-block">
 			<div class="d-inline-block">
 				<img src="{{ asset('ui/frontend/images/book/welcome.gif') }}" alt="" style="width:100px;height:60px">
@@ -17,7 +17,7 @@
 		
 		 
 		
-	</marquee>
+	</marquee> --}}
 	<section class=" gray-bg ">
  
 		 
