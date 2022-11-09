@@ -62,11 +62,38 @@
                         <i class="fas fa-chart-bar me-1"></i>
                         Bar Chart Example
                     </div>
-                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                    <div class="card-body"><canvas id="myChart1" width="100%" height="40"></canvas></div>
                 </div>
             </div>
         </div>
          
     </div>
 </main>
+
+
+
+<script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myChart1", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+    </script>
+    
 </x-backend.layout.master>

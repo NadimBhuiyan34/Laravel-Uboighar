@@ -81,11 +81,12 @@
               @if (auth()->user())
                  
               @auth
-              <img src="{{asset('/storage/profiles/'.auth()->user()->profile->image)}}" alt="profile"style="border-radius: 50%;width:35px;height:35px;" class="border"/>
+              <img src="{{asset('/storage/profiles/'.auth()->user()->profile->image)}}" alt="profile"style="border-radius: 50%;width:35px;height:35px;margin-left:10px" class="border"/>
               {{auth()->user()->name}}
               @endauth
               @else
-              <img src="{{asset('/storage/profiles/profile.jpg')}}" alt="profile"style="border-radius: 50%;width:35px;height:35px;" class="border"/>
+              {{-- <img src="{{asset('/storage/profiles/profile.jpg')}}" alt="profile"style="border-radius: 50%;width:35px;height:35px;" class="border"/> --}}
+              <i class="fa-solid fa-user" style="font-size:30px;margin-left:50px"></i>
               @endif
            
               
