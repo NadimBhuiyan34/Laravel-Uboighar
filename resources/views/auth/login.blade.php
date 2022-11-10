@@ -14,7 +14,7 @@
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
-
+            <img src="{{ asset('ui/frontend/images/logo/uboighar.png') }}" alt="" class="img-fluid" style="margin: auto;padding:10px;margin-bottom:10px">
             <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
